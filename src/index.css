@@ -145,12 +145,12 @@ nav {
   color: var(--clr-primary-5);
   background: transparent;
   border-color: transparent;
-  transition: var(--transition);
+  transition: var(--transition) !important;
   cursor: pointer;
 }
 .nav-toggle:hover {
-  color: var(--clr-primary-1);
-  transform: rotate(90deg);
+  color: var(--clr-primary-1) !important;
+  transform: rotate(90deg) !important;
 }
 .logo {
   height: 40px;

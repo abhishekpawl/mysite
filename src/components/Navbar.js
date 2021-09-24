@@ -4,16 +4,24 @@ import {VscThreeBars} from 'react-icons/vsc';
 import { links, social } from "./data";
 import SingleLink from "./SingleLink";
 import SocialIcon from "./SocialIcon";
+import {motion} from 'framer-motion';
 
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false)
 
   const linksContainerRef = useRef(null)
   const linksRef = useRef(null)
+  const nameRef = useRef(null)
 
   const toggleHandler = () => {
     setShowLinks(!showLinks)
   }
+
+  var slideConstraint = 300
+
+  useEffect(() => {
+    slideConstraint = nameRef.current.getBoundingClientRect().right
+  }, [])
 
   useEffect(() => {
     const linksHeight = linksRef.current.getBoundingClientRect().height
@@ -28,9 +36,19 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div className="nav-center">
+      <div className="nav-center" ref={nameRef}>
         <div className="nav-header">
-          <h2 style={{textShadow: 'var(--dark-shadow)'}}>_abhishekPawl</h2>
+          <motion.h2
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+            transition={{duration: 1}}
+            whileHover={{
+              scale: 1.05,
+              transition: { duration: 0.5 },
+            }}
+            drag="x"
+            dragConstraints={{ left: 0, right: `${slideConstraint}` }}
+            style={{textShadow: 'var(--dark-shadow)'}}>_abhishekPawl</motion.h2>
           <button className="nav-toggle" onClick={toggleHandler}>
             <VscThreeBars />
           </button>
