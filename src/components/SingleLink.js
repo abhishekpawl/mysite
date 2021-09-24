@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const SingleLink = ({url, text}) => {
   return (
     <li>
-      <a href={url}>
+      <Link to={url}>
         {text}
-      </a>
+      </Link>
     </li>
   )
 }
