@@ -30,7 +30,7 @@
   --clr-red-dark: hsl(360, 67%, 44%);
   --clr-red-light: hsl(360, 71%, 66%);
   --clr-green-dark: hsl(123, 26%, 28%);
-  --clr-green-light: hsl(125, 71%, 66%);
+  --clr-green-light: hsl(124, 74%, 92%);
   --clr-black: #222;
   --transition: all 0.5s linear;
   --spacing: 0.1rem;
@@ -52,6 +52,9 @@
 body {
   font-family: Cantarell, "Trebuchet MS", Helvetica, sans-serif, Calibri, 'SimSun', Ubuntu, 'Segoe UI', BlinkMacSystemFont, Roboto, Oxygen, 'Open Sans';
   background: var(--clr-grey-9);
+  /* background-image: url(https://res.cloudinary.com/dyiwzykis/image/upload/v1632568263/wall_jzp6yv.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; */
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
@@ -118,7 +121,8 @@ p {
 
 /* navbar */
 nav {
-  background: rgb(248, 240, 206);
+  /* background: rgb(248, 240, 206); */
+  background-image: url('https://res.cloudinary.com/dyiwzykis/image/upload/v1632567398/sceneA_lhrvxn.jpg');
   box-shadow: var(--light-shadow);
 }
 .nav-header {
@@ -176,11 +180,11 @@ nav {
   margin: 2.5rem auto;
   max-width: var(--max-width);
   color: var(--clr-black);
-  background-color: var(--clr-grey-8);
+  background: var(--clr-grey-8);
+  opacity: 0.2;
   padding-top: 1.25rem;
   padding-bottom: 1rem;
   border-radius: 1rem;
-  opacity: 0.5;
 }
 
 @media screen and (min-width: 992px) {

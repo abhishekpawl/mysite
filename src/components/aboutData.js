@@ -16,7 +16,7 @@ export const aboutData = [
   },
   {
     id: 4,
-    image: 'https://res.cloudinary.com/dyiwzykis/image/upload/v1632551468/ManU_t6njwf.jpg',
+    image: 'https://res.cloudinary.com/dyiwzykis/image/upload/v1632567789/manU_xebjie.jpg',
     text: 'I am a Red Devil. Have been a passionate follower of Manchester United for a long time now. Yes! I miss Sir Fergie days. :('
   },
   {
