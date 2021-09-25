@@ -14,7 +14,9 @@ const SingleLink = ({url, text}) => {
     }}
     >
       <Link to={url}>
-        {text}
+        <h5>
+          {text}
+        </h5>
       </Link>
     </motion.li>
   )

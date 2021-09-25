@@ -28,9 +28,14 @@ const Navbar = () => {
   }, [showLinks])
 
   return (
-    <nav>
+    <motion.nav
+    initial={{opacity: 0}}
+    animate={{opacity: 1}}
+    transition={{duration: 0.8}}
+    >
       <div className="nav-center" ref={nameRef}>
         <div className="nav-header">
+          <img src='https://res.cloudinary.com/dyiwzykis/image/upload/v1632554053/profile_yq0bne.jpg' alt="me" className='logo-img' />
           <motion.h2
             initial={{opacity: 0}}
             animate={{opacity: 1}}
@@ -40,8 +45,7 @@ const Navbar = () => {
               transition: { duration: 0.5 },
             }}
             drag="x"
-            dragConstraints={{ left: 0, right: 100 }}
-            style={{textShadow: 'var(--dark-shadow)'}}>_abhishekPawl</motion.h2>
+            dragConstraints={{ left: 0, right: 100 }}>_abhishekPawl</motion.h2>
           <button className="nav-toggle" onClick={toggleHandler}>
             <VscThreeBars />
           </button>
@@ -67,7 +71,7 @@ const Navbar = () => {
           }
         </ul>
       </div>
-    </nav>
+    </motion.nav>
   )
 }
 
