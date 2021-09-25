@@ -47,7 +47,7 @@ const AboutMe = () => {
       transition={{duration: 1}}
       >
         <h2>
-          <span><GrInfo /></span> about me
+          <span><GrInfo /></span>about me
         </h2>
       </motion.div>
       <motion.div

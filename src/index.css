@@ -141,7 +141,7 @@ nav {
 }
 .nav-toggle:hover {
   color: var(--clr-primary-1) !important;
-  transform: rotate(90deg) !important;
+  /* transform: rotate(90deg) !important; */
 }
 .logo {
   height: 40px;
@@ -180,8 +180,7 @@ nav {
   margin: 2.5rem auto;
   max-width: var(--max-width);
   color: var(--clr-black);
-  background: var(--clr-grey-8);
-  opacity: 0.2;
+  /* background: var(--clr-grey-8); */
   padding-top: 1.25rem;
   padding-bottom: 1rem;
   border-radius: 1rem;
@@ -190,6 +189,10 @@ nav {
 @media screen and (min-width: 992px) {
   .section {
     width: 95vw;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
   }
 }
 /* about me */
@@ -288,6 +291,70 @@ article h4 {
 .next {
   right: 0;
 }
+/* 3 */
+.container {
+  width: 90vw;
+  margin: 0 auto;
+  border-radius: var(--radius);
+  padding: 2.5rem 2rem;
+  max-width: var(--fixed-width);
+  gap: 1rem 2rem;
+  display: block;
+  transition: var(--transition);
+}
+.container h3 {
+  line-height: 1.2;
+  font-weight: 500;
+}
+.edu {
+  padding: 1rem 1.5rem;
+  border: 2px solid var(--clr-grey-special);
+  margin-bottom: 1rem;
+  border-radius: var(--radius);
+  box-shadow: var(--light-shadow);
+  color: var(--clr-primary-1);
+  transition: var(--transition);
+}
+.edu h3 {
+  text-transform: none;
+  line-height: 1.5;
+}
+.edu h4 {
+  text-transform: none;
+  line-height: 1.5;
+}
+.edu p {
+  color: var(--clr-grey-3);
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+}
+.edu header {
+  justify-content: space-between;
+  align-items: center;
+}
+.edu header h3 {
+  margin-bottom: 0;
+}
+.edu-btn {
+  background: transparent;
+  border-color: transparent;
+  width: 2rem;
+  height: 2rem;
+  background: var(--clr-grey-special);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--clr-red-special);
+  cursor: pointer;
+  margin-left: 1rem;
+  align-self: center;
+  min-width: 2rem;
+}
+
+
+
+
 @media screen and (min-width: 800px) {
   .nav-center {
     max-width: 1170px;
