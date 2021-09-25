@@ -1,5 +1,4 @@
 import React, {useState, useEffect, useRef} from "react";
-import logo from '../ap.svg';
 import {VscThreeBars} from 'react-icons/vsc';
 import { links, social } from "./data";
 import SingleLink from "./SingleLink";
@@ -16,12 +15,6 @@ const Navbar = () => {
   const toggleHandler = () => {
     setShowLinks(!showLinks)
   }
-
-  var slideConstraint = 300
-
-  useEffect(() => {
-    slideConstraint = nameRef.current.getBoundingClientRect().right
-  }, [])
 
   useEffect(() => {
     const linksHeight = linksRef.current.getBoundingClientRect().height
@@ -47,7 +40,7 @@ const Navbar = () => {
               transition: { duration: 0.5 },
             }}
             drag="x"
-            dragConstraints={{ left: 0, right: `${slideConstraint}` }}
+            dragConstraints={{ left: 0, right: 100 }}
             style={{textShadow: 'var(--dark-shadow)'}}>_abhishekPawl</motion.h2>
           <button className="nav-toggle" onClick={toggleHandler}>
             <VscThreeBars />
