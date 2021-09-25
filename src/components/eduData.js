@@ -8,7 +8,7 @@ export const eduData = [
       'Participated in sports all year round.',
       'Received Bronze Medal in school in 16th SOF National Cyber Olympiad (2016 - 2017).',
     ],
-    performance: 'Council for the Indian School Certificate Examinations, New Delhi (CISCE), 96.4%.'
+    performance: 'Council for the Indian School Certificate Examinations, New Delhi (CISCE), 96.4%'
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ export const eduData = [
       'Participated in debates and Model United Nations.',
       'Delegation for Delhi Public School, Siliguri in KIIT International Model United Nations 2018.'
     ],
-    performance: 'Central Board of Secondary Education (CBSE), 93%.'
+    performance: 'Central Board of Secondary Education (CBSE), 93%'
   },
   {
     id: 3,
@@ -28,6 +28,6 @@ export const eduData = [
       'Exploring new frontiers.',
       'Technical Team Member for Electronics and Communication Engineering Students Society, NIT Durgapur.'
     ],
-    performance: 'Bachelor of Technology, Electronics and Communicaiton Engineering, 9.04 CGPA.'
+    performance: 'Bachelor of Technology, Electronics and Communicaiton Engineering, 9.04 CGPA'
   }
 ]

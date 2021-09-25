@@ -52,9 +52,10 @@
 body {
   font-family: Cantarell, "Trebuchet MS", Helvetica, sans-serif, Calibri, 'SimSun', Ubuntu, 'Segoe UI', BlinkMacSystemFont, Roboto, Oxygen, 'Open Sans';
   background: var(--clr-grey-9);
-  /* background-image: url(https://res.cloudinary.com/dyiwzykis/image/upload/v1632568263/wall_jzp6yv.jpg);
-  background-repeat: no-repeat;
+  /* background-image: url(https://res.cloudinary.com/dyiwzykis/image/upload/v1632568263/wall_jzp6yv.jpg); */
+  /* background-repeat: no-repeat;
   background-size: cover; */
+  background-color: rgb(209, 207, 112);
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
