@@ -120,6 +120,30 @@ p {
   }
 }
 
+a:link {
+  color: var(--clr-primary-2);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--clr-grey-3);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--clr-primary-3);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: var(--clr-primary-4);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
 /* navbar */
 nav {
   /* background: rgb(248, 240, 206); */

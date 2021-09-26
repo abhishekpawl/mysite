@@ -1,8 +1,13 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Skill = () => {
   return (
-    <div className="extra-info">
+    <motion.div 
+    initial={{opacity: 0}}
+    animate={{opacity: 1}}
+    transition={{duration: 1}}
+    className="extra-info">
       <h2 style={{marginBottom: '1rem'}}>Technical skills</h2>
       <ul>
         <li>
@@ -29,7 +34,7 @@ const Skill = () => {
           </p>
         </li>
       </ul>
-    </div>
+    </motion.div>
   )
 }
 

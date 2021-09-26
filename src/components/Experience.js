@@ -1,16 +1,21 @@
 import React from 'react';
 import { expData as data } from './expData';
 import SingleJob from './SingleJob';
+import { motion } from 'framer-motion';
 
 const Experience = () => {
   return (
-    <div className="extra-info">
+    <motion.div 
+    initial={{opacity: 0}}
+    animate={{opacity: 1}}
+    transition={{duration: 1}}
+    className="extra-info">
       {
         data.map((single) => {
           return <SingleJob key={single.id} {...single} />
         })
       }
-    </div>
+    </motion.div>
   )
 }
 
