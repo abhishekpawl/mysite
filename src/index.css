@@ -149,6 +149,7 @@ nav {
   /* background: rgb(248, 240, 206); */
   background-image: url('https://res.cloudinary.com/dyiwzykis/image/upload/v1632567398/sceneA_lhrvxn.jpg');
   box-shadow: var(--light-shadow);
+  max-width: 100%;
 }
 .nav-header {
   display: flex;

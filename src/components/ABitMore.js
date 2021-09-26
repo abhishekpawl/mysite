@@ -21,12 +21,22 @@ const ABitMore = () => {
       <div className="extras-center">
         {/* buttons */}
         <div className="btn-container">
-          <button key="1" className={`extra-btn ${topic === 'skill' && 'active-btn'}`}
+          <motion.button
+          whileHover={{
+            scale: 1.05,
+            transition: { duration: 0.5 },
+          }}
+          key="1" className={`extra-btn ${topic === 'skill' && 'active-btn'}`}
           onClick={() => setTopic('skill')}
-          >Skills</button>
-          <button key="2" className={`extra-btn ${topic === 'experience' && 'active-btn'}`}
+          >Skills</motion.button>
+          <motion.button
+          whileHover={{
+            scale: 1.05,
+            transition: { duration: 0.5 },
+          }}
+          key="2" className={`extra-btn ${topic === 'experience' && 'active-btn'}`}
           onClick={() => setTopic('experience')}
-          >Experience</button>
+          >Experience</motion.button>
         </div>
         {/* info */}
         {

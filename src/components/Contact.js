@@ -33,14 +33,19 @@ const Contact = () => {
             temp = temp + 1
 
             return (
-              <section key={single.id+temp} className="edu" style={{textAlign: 'center'}}>
+              <motion.section
+              whileHover={{
+                scale: 1.05,
+                transition: { duration: 0.5 },
+              }}
+              key={single.id+temp} className="edu" style={{textAlign: 'center'}}>
                 <h4 style={{display: 'inline-block'}}>
                   <a href={single.url}>{single.media}</a>
                   <span style={{margin: 'auto 1rem'}}>
                     {single.icon}
                   </span>
                 </h4>
-              </section>
+              </motion.section>
             )
           })
         }
