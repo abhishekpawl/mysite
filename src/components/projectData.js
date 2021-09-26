@@ -1,7 +1,7 @@
 export const projectData = [
   {
     id: 1,
-    title: 'Gait Recogintion in Occlusion and Human Re-Identificaiton.',
+    title: 'Gait Recogintion in Occlusion and Human Re-Identificaiton',
     tech: [
       'Machine Learning',
       'Image Processing'

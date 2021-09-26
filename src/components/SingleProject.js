@@ -10,7 +10,7 @@ const SingleProject = ({title, tech, text}) => {
 
   return (
     <section className="edu">
-      <header>
+      <header style={{display: 'flex'}}>
         <h3>{title}</h3>
         <button className="edu-btn" onClick={showHandler}>
           {showData ? <MdExpandLess></MdExpandLess> : <MdExpandMore></MdExpandMore>}

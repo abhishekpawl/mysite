@@ -2,23 +2,36 @@ import React from 'react';
 import {GoProject} from 'react-icons/go';
 import { projectData as data } from './projectData';
 import SingleProject from './SingleProject';
+import { motion } from 'framer-motion';
 
 const Projects = () => {
   return (
-    <section className="section">
-      <div className="title">
+    <motion.section 
+    initial={{opacity: 0}}
+    animate={{opacity: 1}}
+    transition={{duration: 0.8}}
+    className="section">
+      <motion.div 
+      initial={{opacity: 0}}
+      animate={{opacity: 1}}
+      transition={{duration: 1}}
+      className="title">
         <h2>
           <span><GoProject /></span>projects
         </h2>
-      </div>
-      <section className="container">
+      </motion.div>
+      <motion.section 
+      initial={{opacity: 0}}
+      animate={{opacity: 1}}
+      transition={{duration: 1}}
+      className="container">
         {
           data.map((singleData) => {
             return <SingleProject key={singleData.id} {...singleData} />
           })
         }
-      </section>
-    </section>
+      </motion.section>
+    </motion.section>
   )
 }
 
