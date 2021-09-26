@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {MdExpandLess, MdExpandMore} from 'react-icons/md';
+import { motion } from 'framer-motion';
 
 const SingleEduData = ({title, dates, texts, performance}) => {
   const [showData, setShowData] = useState(false)
@@ -11,10 +12,20 @@ const SingleEduData = ({title, dates, texts, performance}) => {
   return (
     <section className="edu">
       <header style={{display: 'flex'}}>
-        <h3>{title}</h3>
-        <button className="edu-btn" onClick={showHandler}>
+        <motion.h3
+        whileHover={{
+          scale: 1.02,
+          transition: { duration: 0.5 },
+        }}
+        >{title}</motion.h3>
+        <motion.button 
+        whileHover={{
+          scale: 1.05,
+          transition: { duration: 0.5 },
+        }}
+        className="edu-btn" onClick={showHandler}>
           {showData ? <MdExpandLess></MdExpandLess> : <MdExpandMore></MdExpandMore>}
-        </button>
+        </motion.button>
       </header>
       {
         showData &&
