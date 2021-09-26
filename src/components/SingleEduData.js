@@ -2,12 +2,14 @@ import React, {useState} from 'react';
 import {MdExpandLess, MdExpandMore} from 'react-icons/md';
 import { motion } from 'framer-motion';
 
-const SingleEduData = ({title, dates, texts, performance}) => {
+const SingleEduData = ({id, title, dates, texts, performance}) => {
   const [showData, setShowData] = useState(false)
 
   const showHandler = () => {
     setShowData(!showData)
   }
+
+  var temp = 1
 
   return (
     <section className="edu">
@@ -32,13 +34,12 @@ const SingleEduData = ({title, dates, texts, performance}) => {
         <div>
           <p>{dates}</p>
           <h4>{performance}</h4>
-          <p>
-            {
-              texts.map((text) => {
-                return <p>{text}</p>
-              })
-            }
-          </p>
+          {
+            texts.map((text) => {
+              temp = temp + 1
+              return <p key={id+temp}>{text}</p>
+            })
+          }
         </div>
       }
     </section>
