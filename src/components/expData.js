@@ -2,7 +2,7 @@ export const expData = [
   {
     id: 1,
     title: 'Indian Institute of Technology, (BHU) Varanasi',
-    text: 'Summer Research Internsip - Gait Recognition in Occlusion and Human Re-identificaiton, under the supervision of Dr. Pratik Chattopadhyay, Assistant Prof., Dept. of Computer Sci., & Engg., IIT (BHU)',
+    text: 'Summer Research Internship - Gait Recognition in Occlusion and Human Re-identificaiton, under the supervision of Dr. Pratik Chattopadhyay, Assistant Prof., Dept. of Computer Sci., & Engg., IIT (BHU)',
     year: '2021'
   },
   {
