@@ -1,0 +1,19 @@
+export const projectData = [
+  {
+    id: 1,
+    title: 'Gait Recogintion in Occlusion and Human Re-Identificaiton.',
+    tech: [
+      'Machine Learning',
+      'Image Processing'
+    ],
+    text: 'Designed and built a Machine Learning pipeline to effectivelly reconstruct occluded sequences from incomplete Gait Cycles for efficient offline Gait Recognition and identification of individuals.'
+  },
+  {
+    id: 2,
+    title: 'Stick Notes/Cards',
+    tech: [
+      'HTML', 'CSS', 'JavaScript', 'React.js'
+    ],
+    text: 'A static app made with the use of React.js to use as stick notes.'
+  }
+]

@@ -35,7 +35,12 @@ const Navbar = () => {
     >
       <div className="nav-center" ref={nameRef}>
         <div className="nav-header">
-          <img src='https://res.cloudinary.com/dyiwzykis/image/upload/v1632554053/profile_yq0bne.jpg' alt="me" className='logo-img' />
+          <motion.img src='https://res.cloudinary.com/dyiwzykis/image/upload/v1632554053/profile_yq0bne.jpg' alt="me" className='logo-img' 
+          whileHover={{
+            scale: 1.075,
+            transition: { duration: 0.5 }
+          }}
+          />
           <motion.h2
             initial={{opacity: 0}}
             animate={{opacity: 1}}

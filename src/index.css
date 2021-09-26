@@ -209,7 +209,7 @@ nav {
 }
 .title span {
   font-size: 0.85em;
-  color: var(--clr-primary-5);
+  color: var(--clr-black);
   margin-right: 1rem;
   font-weight: 700;
 }
@@ -323,6 +323,16 @@ article h4 {
 .edu h4 {
   text-transform: none;
   line-height: 1.5;
+}
+.edu .tech {
+  color: var(--clr-grey-5);
+  background: var(--clr-grey-10);
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  margin: 0.2rem 0.5rem;
+  border-radius: var(--radius);
+  box-shadow: var(--dark-shadow);
+  text-size-adjust: 0.5rem;
 }
 .edu p {
   color: var(--clr-grey-3);
