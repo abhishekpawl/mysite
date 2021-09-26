@@ -7,7 +7,7 @@ export const aboutData = [
   {
     id: 2,
     image: 'https://res.cloudinary.com/dyiwzykis/image/upload/v1632553125/sceneB_yeeel2.jpg',
-    text: 'I am just another kid aspiring to go places. I am a learner. I am a tech enthusiast. I am interested in Machine Learning'
+    text: 'I am just another kid aspiring to go places. I am a learner. I am a tech enthusiast. I am interested in Machine Learning.'
   },
   {
     id: 3,

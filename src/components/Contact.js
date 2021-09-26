@@ -1,20 +1,33 @@
 import React from 'react';
 import {GrContactInfo} from 'react-icons/gr';
 import { contactData as data } from './contactData';
+import { motion } from 'framer-motion';
 
 const Contact = () => {
   var temp = 1
 
   return (
-    <section className="section">
-      <div className="title">
+    <motion.section 
+    initial={{opacity: 0}}
+    animate={{opacity: 1}}
+    transition={{duration: 0.8}}
+    className="section">
+      <motion.div 
+      initial={{opacity: 0}}
+      animate={{opacity: 1}}
+      transition={{duration: 1}}
+      className="title">
         <h2>
           <span><GrContactInfo /></span>contact me
         </h2>
-        <p style={{marginBottom: '0rem'}}>we can always catch up!</p>
+        <p style={{marginBottom: '0rem'}}>we can catch up anytime!</p>
         <a href="mailto: abhishek.paulcp.dbs@gmail.com">Send Email</a>
-      </div>
-      <section className="container">
+      </motion.div>
+      <motion.section 
+      initial={{opacity: 0}}
+      animate={{opacity: 1}}
+      transition={{duration: 1}}
+      className="container">
         {
           data.map((single) => {
             temp = temp + 1
@@ -31,8 +44,8 @@ const Contact = () => {
             )
           })
         }
-      </section>
-    </section>
+      </motion.section>
+    </motion.section>
   )
 }
 
