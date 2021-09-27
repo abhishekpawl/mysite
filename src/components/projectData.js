@@ -5,10 +5,13 @@ export const projectData = [
     tech: [
       'Machine Learning',
       'Image Processing',
-      'Python'
+      'Python',
+      'Tensorflow',
+      'NumPy'
     ],
     text: 'Designed and built a Machine Learning pipeline to effectivelly reconstruct occluded sequences from incomplete Gait Cycles for efficient offline Gait Recognition and identification of individuals.',
-    url: 'https://res.cloudinary.com/dyiwzykis/image/upload/v1632648854/pipe_jneq33.gif'
+    url: 'https://res.cloudinary.com/dyiwzykis/image/upload/v1632648854/pipe_jneq33.gif',
+    link: '#'
   },
   {
     id: 2,
@@ -17,6 +20,7 @@ export const projectData = [
       'HTML', 'CSS', 'JavaScript', 'React.js'
     ],
     text: 'A static app made with the use of React.js to use as stick notes.',
-    url: 'https://res.cloudinary.com/dyiwzykis/image/upload/v1632648854/note_syo4hw.gif'
+    url: 'https://res.cloudinary.com/dyiwzykis/image/upload/v1632648854/note_syo4hw.gif',
+    link: 'https://paul-sticknotes.netlify.app/'
   }
 ]

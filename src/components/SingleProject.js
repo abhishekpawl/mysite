@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import {MdExpandLess, MdExpandMore} from 'react-icons/md';
 import { motion } from "framer-motion";
 
-const SingleProject = ({id, title, tech, text, url}) => {
+const SingleProject = ({id, title, tech, text, url, link}) => {
   const [showData, setShowData] = useState(false)
 
   const showHandler = () => {
@@ -19,7 +19,9 @@ const SingleProject = ({id, title, tech, text, url}) => {
           scale: 1.02,
           transition: { duration: 0.5 },
         }}
-        >{title}</motion.h3>
+        >
+          <a href={link}>{title}</a>
+        </motion.h3>
         <motion.button 
         whileHover={{
           scale: 1.05,
