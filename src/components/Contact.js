@@ -21,7 +21,7 @@ const Contact = () => {
           <span><GrContactInfo /></span>contact me
         </h2>
         <p style={{marginBottom: '0rem'}}>we can catch up anytime!</p>
-        <a href="mailto: abhishek.paulcp.dbs@gmail.com">Send Email</a>
+        <a href="mailto: abhishek.paulcp.dbs@gmail.com" target="_blank">Send Email</a>
       </motion.div>
       <motion.section 
       initial={{opacity: 0}}
@@ -40,7 +40,7 @@ const Contact = () => {
               }}
               key={single.id+temp} className="edu" style={{textAlign: 'center'}}>
                 <h4 style={{display: 'inline-block'}}>
-                  <a href={single.url}>{single.media}</a>
+                  <a href={single.url} target="_blank">{single.media}</a>
                   <span style={{margin: 'auto 1rem'}}>
                     {single.icon}
                   </span>

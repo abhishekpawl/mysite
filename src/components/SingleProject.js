@@ -20,7 +20,7 @@ const SingleProject = ({id, title, tech, text, url, link}) => {
           transition: { duration: 0.5 },
         }}
         >
-          <a href={link}>{title}</a>
+          <a href={link} target="_blank">{title}</a>
         </motion.h3>
         <motion.button 
         whileHover={{
