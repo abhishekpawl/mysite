@@ -19,6 +19,7 @@ const Projects = () => {
         <h2>
           <span><GoProject /></span>projects
         </h2>
+        <h6>*minimal information provied</h6>
       </motion.div>
       <motion.section 
       initial={{opacity: 0}}
