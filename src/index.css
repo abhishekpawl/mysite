@@ -594,10 +594,17 @@ article {
 article.activeSlide {
   opacity: 1;
   transform: translateX(0);
+  transition: var(--transition);
 }
 article.prevSlide {
   transform: translateX(-100%);
+  width: 0;
+  height: 0;
+  transition: var(--transition);
 }
 article.nextSlide {
   transform: translateX(100%);
+  width: 0;
+  height: 0;
+  transition: var(--transition);
 }
