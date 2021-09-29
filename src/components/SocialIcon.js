@@ -8,7 +8,7 @@ const SocialIcon = ({url, icon}) => {
             animate={{opacity: 1}}
             transition={{duration: 1}}
     >
-      <a href={url} target="_blank">
+      <a href={url} target="_blank" rel="noreferrer">
         {icon}
       </a>
     </motion.li>
