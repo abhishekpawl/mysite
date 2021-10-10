@@ -391,6 +391,8 @@ article h4 {
 }
 .edu header h3 {
   margin-bottom: 0;
+  border-radius: var(--radius);
+  background: rgb(36, 41, 53);
 }
 .edu-btn {
   background: transparent;

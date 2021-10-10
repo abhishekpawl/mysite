@@ -11,7 +11,7 @@ const SingleJob = ({id, title, text, year}) => {
   return (
     <div className="edu">
       <header style={{display: 'flex'}}>
-        <h3 style={{color: 'var(--clr-primary-1)', backgroundColor: 'rgb(209, 207, 112)'}}>{title}</h3>
+        <h3>{title}</h3>
         <button className="edu-btn" onClick={showHandler}>
           {showData ? <MdExpandLess></MdExpandLess> : <MdExpandMore></MdExpandMore>}
         </button>
@@ -20,7 +20,7 @@ const SingleJob = ({id, title, text, year}) => {
         showData &&
         <div>
           <p>{year}</p>
-          <h4 style={{backgroundColor: 'rgb(209, 207, 112)'}}>{text}</h4>
+          <h4 style={{backgroundColor: 'rgb(36, 41, 53)'}}>{text}</h4>
         </div>
       }
     </div>
