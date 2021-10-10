@@ -27,7 +27,6 @@ function App() {
         ) : (
           <Router>
             <Navbar></Navbar>
-            <Background className="tsparticle" />
             <Switch>
               <Route exact path="/">
                 <AboutMe />
