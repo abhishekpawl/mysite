@@ -51,14 +51,15 @@
 }
 body {
   font-family: Cantarell, "Trebuchet MS", Helvetica, sans-serif, Calibri, 'SimSun', Ubuntu, 'Segoe UI', BlinkMacSystemFont, Roboto, Oxygen, 'Open Sans';
-  background: var(--clr-grey-9);
+  background: rgb(36, 41, 53);
   /* background-image: url(https://res.cloudinary.com/dyiwzykis/image/upload/v1632568263/wall_jzp6yv.jpg); */
   /* background-repeat: no-repeat;
   background-size: cover; */
-  background-color: rgb(209, 207, 112);
+  /* background-color: rgb(150, 187, 158); */
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
+  height: 100vh;
 }
 ul {
   list-style-type: none;
@@ -120,6 +121,10 @@ p {
   }
 }
 
+.tsparticle {
+  max-height: max-content;
+}
+
 .loader {
   display: flex;
   justify-content: center;
@@ -157,7 +162,8 @@ nav {
   /* background: rgb(248, 240, 206); */
   background-image: url('https://res.cloudinary.com/dyiwzykis/image/upload/v1632567398/sceneA_lhrvxn.jpg');
   box-shadow: var(--light-shadow);
-  max-width: 100%;
+  width: 100%;
+  position: fixed;
 }
 .nav-header {
   display: flex;
@@ -218,6 +224,11 @@ nav {
   padding-top: 1.25rem;
   padding-bottom: 1rem;
   border-radius: 1rem;
+  position: absolute;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  top: 20%;
 }
 
 @media screen and (min-width: 992px) {
