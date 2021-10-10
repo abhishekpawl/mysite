@@ -1,5 +1,5 @@
 import React, {useState, useEffect, useRef} from "react";
-import {VscThreeBars} from 'react-icons/vsc';
+import {CgMoreVertical} from 'react-icons/cg';
 import { links, social } from "./data";
 import SingleLink from "./SingleLink";
 import SocialIcon from "./SocialIcon";
@@ -50,9 +50,15 @@ const Navbar = () => {
               transition: { duration: 0.5 },
             }}
             drag="x"
-            dragConstraints={{ left: 0, right: 100 }}>_abhishekPawl</motion.h2>
-          <button className="nav-toggle" onClick={toggleHandler}>
-            <VscThreeBars />
+            dragConstraints={{ left: 0, right: 100 }}
+            style= {{display: 'flex', justifyContent: 'flex-end'}}
+            >
+              <h6>_abhishek</h6>Pawl
+            </motion.h2>
+          <button className="nav-toggle" onClick={toggleHandler}
+          style={{scale: 0.5}}
+          >
+            <CgMoreVertical />
           </button>
         </div>
         <div className="links-container" ref={linksContainerRef}>
