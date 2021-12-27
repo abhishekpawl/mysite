@@ -53,7 +53,7 @@ const Navbar = () => {
             dragConstraints={{ left: 0, right: 100 }}
             style= {{display: 'flex', justifyContent: 'flex-end'}}
             >
-              _abhishek Pawl
+              _abhishekPawl
             </motion.h2>
           <button className="nav-toggle" onClick={toggleHandler}
           style={{scale: 0.5}}
