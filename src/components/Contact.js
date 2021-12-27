@@ -35,7 +35,7 @@ const Contact = () => {
             return (
               <motion.section
               whileHover={{
-                scale: 1.05,
+                scale: 1.025,
                 transition: { duration: 0.5 },
               }}
               key={single.id+temp} className="edu" style={{textAlign: 'center'}}>

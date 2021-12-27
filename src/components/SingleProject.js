@@ -24,7 +24,7 @@ const SingleProject = ({id, title, tech, text, url, link}) => {
         </motion.h3>
         <motion.button 
         whileHover={{
-          scale: 1.05,
+          scale: 1.025,
           transition: { duration: 0.5 },
         }}
         className="edu-btn" onClick={showHandler}>

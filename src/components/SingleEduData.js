@@ -22,7 +22,7 @@ const SingleEduData = ({id, title, dates, texts, performance}) => {
         >{title}</motion.h3>
         <motion.button 
         whileHover={{
-          scale: 1.05,
+          scale: 1.03,
           transition: { duration: 0.5 },
         }}
         className="edu-btn" onClick={showHandler}>

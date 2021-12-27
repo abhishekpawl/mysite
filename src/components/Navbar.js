@@ -37,7 +37,7 @@ const Navbar = () => {
         <div className="nav-header">
           <motion.img src='https://res.cloudinary.com/dyiwzykis/image/upload/v1632554053/profile_yq0bne.jpg' alt="me" className='logo-img' 
           whileHover={{
-            scale: 1.075,
+            scale: 1.05,
             transition: { duration: 0.5 }
           }}
           />
@@ -53,7 +53,7 @@ const Navbar = () => {
             dragConstraints={{ left: 0, right: 100 }}
             style= {{display: 'flex', justifyContent: 'flex-end'}}
             >
-              <h6>_abhishek</h6>Pawl
+              _abhishek Pawl
             </motion.h2>
           <button className="nav-toggle" onClick={toggleHandler}
           style={{scale: 0.5}}
