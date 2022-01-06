@@ -18,9 +18,9 @@ After cloning the repo:
     1. provide a tty
     1. run the container in detached mode
     1. publish the exported ports (since it has been provided for in the Dockerfile), run
-      ```
-      docker container run -i -t -d -P <IMAGE-NAME>:<tagname>
-      ```
+        ```
+        docker container run -i -t -d -P <IMAGE-NAME>:<tagname>
+        ```
   1. To retrieve the ID of the docker container, run
       ```
       docker container ls
