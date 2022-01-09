@@ -21,7 +21,7 @@ export const links = [
   {
     id: 4,
     url: '/aBitMore',
-    text: 'a bit more'
+    text: 'more'
   },
   {
     id: 5,

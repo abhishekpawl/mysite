@@ -2,7 +2,7 @@
 
 You can visit [Here](https://abhishekpawl.vercel.app/)
 
-# Docker utility:
+# Docker utility
 
 ## To run the dockerized container of this app:
 
@@ -31,6 +31,10 @@ After cloning the repo:
     1. To get into the container and the filesystem in interactive mode, run
         ```
         docker exec -it <CONTAINER-ID> sh
+        ```
+        or
+        ```
+        docker container attach <CONTAINER-ID>
         ```
         ![docker exec --it 'CONTAINER-ID' sh](readmeAssets/exec.png)
     1. To stop and remove the container at once, run
