@@ -2,6 +2,8 @@
 
 You can visit [Here](https://abhishekpawl.vercel.app/)
 
+**UPDATE:** [go](https://github.com/abhishekpawl/mysite#docker-compose-utility)
+
 # Docker utility
 
 ## To run the dockerized container of this app:
@@ -17,7 +19,7 @@ After cloning the repo:
         1. keep STDIN open even if not attached
         1. provide a tty
         1. run the container in detached mode
-        1. publish the exported ports (since it has been provided for in the Dockerfile), run
+        1. [UPDATE: **After uncommenting line 7 in Dockerfile**] publish the exported ports (since it has been provided for in the Dockerfile), run
             ```
             docker container run -i -t -d -P <IMAGE-NAME>:<tagname>
             ```
@@ -42,3 +44,20 @@ After cloning the repo:
         docker container rm -f <CONTAINER ID>
         ```
 
+# Docker Compose utility
+
+## A step ahead:
+* In the root directory:
+    1. Now, with the ```docker-compose.yml``` file available can, run
+    [__Port to be exposed can be altered in the docker-compose.yml file__]
+        ```
+        docker-compose up -d
+        ```
+    1. The information can be retrieved by the command
+        ```
+        docker-compose ps
+        ```
+    1. To undo all changes, run
+        ```
+        docker-compose down
+        ```
