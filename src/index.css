@@ -62,8 +62,7 @@ body {
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
-  height: 100vh;
-  max-height: fit-content;
+  max-height: 100vh;
 }
 ul {
   list-style-type: none;
@@ -394,7 +393,7 @@ article h4 {
 .edu header h3 {
   margin-bottom: 0;
   border-radius: var(--radius);
-  background: rgb(36, 41, 53);
+  /* background: rgb(36, 41, 53); */
 }
 .edu-btn {
   background: transparent;
