@@ -10,7 +10,7 @@ export const projectData = [{
         ],
         text: 'Designed and built a Machine Learning pipeline to effectivelly reconstruct occluded sequences from incomplete Gait Cycles for efficient offline Gait Recognition and identification of individuals.',
         url: 'https://res.cloudinary.com/dyiwzykis/image/upload/v1632648854/pipe_jneq33.gif',
-        link: '#'
+        link: 'https://drive.google.com/file/d/18nu8pb6u1pVP7tvoVqxIxetoB4H8tuDM/view?usp=sharing'
     },
     {
         id: 2,
