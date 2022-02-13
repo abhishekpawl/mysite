@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('//fonts.googleapis.com/css?family=Inconsolata');
 
 /* Variables */
 
@@ -53,7 +54,8 @@
 }
 body {
   /* font-family: 'Comic Sans MS', Cantarell, "Trebuchet MS", Helvetica, sans-serif, Calibri, 'SimSun', Ubuntu, 'Segoe UI', BlinkMacSystemFont, Roboto, Oxygen, 'Open Sans'; */
-  font-family: "Quicksand";
+  /*font-family: "Quicksand";*/
+  font: 2.5rem Inconsolata, monospace;
   background: rgb(36, 41, 53);
   /* background-image: url(https://res.cloudinary.com/dyiwzykis/image/upload/v1632568263/wall_jzp6yv.jpg); */
   /* background-repeat: no-repeat;
