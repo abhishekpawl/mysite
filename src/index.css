@@ -54,8 +54,9 @@
 }
 body {
   /* font-family: 'Comic Sans MS', Cantarell, "Trebuchet MS", Helvetica, sans-serif, Calibri, 'SimSun', Ubuntu, 'Segoe UI', BlinkMacSystemFont, Roboto, Oxygen, 'Open Sans'; */
-  /*font-family: "Quicksand";*/
-  font: 2.5rem Inconsolata, monospace;
+  font-family: "Quicksand";
+  font: 2.5rem;
+  /* font: 2.5rem Inconsolata, monospace; */
   background: rgb(36, 41, 53);
   /* background-image: url(https://res.cloudinary.com/dyiwzykis/image/upload/v1632568263/wall_jzp6yv.jpg); */
   /* background-repeat: no-repeat;
