@@ -8,7 +8,7 @@ export const expData = [
   {
     id: 2,
     title: 'Wells Fargo',
-    text: 'Program Analyst Intern',
+    text: 'Program Associate Intern',
     year: '2022'
   }
 ]
